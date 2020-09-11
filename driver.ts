@@ -1,5 +1,5 @@
 /**
- * PCA9685
+ * PCA9685舵机驱动板
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace PCA9685 {
