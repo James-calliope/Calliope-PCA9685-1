@@ -1,6 +1,6 @@
 {
     "name": "PCA9685舵机驱动板",
-    "version": "0.0.4",
+    "version": "1.0",
     "description": "在Calliope上使用PCA9685舵机驱动控制16路舵机",
     "license": "MIT",
     "dependencies": {
