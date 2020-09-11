@@ -2,7 +2,7 @@
  * PCA9685舵机驱动板
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace PCA9685 {
+namespace 16路舵机控制PCA96865 {
     let _DEBUG: boolean = false
     const debug = (msg: string) => {
         if (_DEBUG === true) {
@@ -342,7 +342,7 @@ namespace PCA9685 {
      * @param ledNumber The number (1-16) of the LED to set the duty cycle on
      * @param dutyCycle The duty cycle (0-100) to set the LED to
      */
-    //% block
+    //% block AAAAAAAAAAA
     export function setLedDutyCycle(ledNum: LEDNum = 1, dutyCycle: number, chipAddress: number = 0x40): void {
         ledNum = Math.max(1, Math.min(16, ledNum))
         dutyCycle = Math.max(0, Math.min(100, dutyCycle))
@@ -367,7 +367,7 @@ namespace PCA9685 {
      * @param servoNum The number (1-16) of the servo to move
      * @param degrees The degrees (0-180) to move the servo to
      */
-    //% block
+    //% block  BBBBBBBBB
     export function setServoPosition(servoNum: ServoNum = 1, degrees: number, chipAddress: number = 0x40): void {
         const chip = getChipConfig(chipAddress)
         servoNum = Math.max(1, Math.min(16, servoNum))
